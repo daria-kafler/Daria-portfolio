@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --main-accent-color: #29F9FF;
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+/* This applies from 0px to 600px screen sizes */
+body {
+    /* background:burlywood; */
+    width: 85vw;
+    padding-left: 2em;
+    font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+}
+
+em {
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-color: var(--main-accent-color);
+    text-decoration-thickness: 0.4ex;
+    text-underline-offset: -0.5ex;
+    text-decoration-skip-ink: none;
+}
+
+nav {
+    padding-bottom: 1rem; 
+}
+
+.menu-button {
+
+    background: none;
+    border: 0.25ex dotted black;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+
+}
+
+.hero {
+    font-size: clamp(1.7rem, 0.7153rem + 1.6368vw, 2.2rem);
+    padding-bottom: 3rem;
+}
+
+.about {
+    padding-bottom: 2rem;
+}
+
+.tech {
+    display: flex;
+    padding-bottom: 2rem;
+}
+ul, li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+/* This applies from 600px onwards screen sizes */
+@media (min-width: 600px){
+    body {
+        background: crimson;
+    }
+}
