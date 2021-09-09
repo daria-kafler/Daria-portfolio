@@ -80,7 +80,7 @@ ul, li {
     top: 7px;
     left: -20px;
     font-size: var(--pseudo-class-font-size);
-    color: #FF0051;
+    color: var(--secondary-accent-color);
 }
 .more-tech {
     font-size: var(--more-tech-list-font-size);
@@ -95,7 +95,7 @@ ul, li {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg); */
     font-size: var(--pseudo-class-font-size);
-    color: #FF0051;
+    color: var(--secondary-accent-color);
 }
 article img {
     max-width: 50%;
@@ -187,6 +187,6 @@ form {
 /* This applies from 600px onwards screen sizes */
 @media (min-width: 600px){
     body {
-        background: crimson;
+        background: rgb(112, 112, 112);
     }
 }
