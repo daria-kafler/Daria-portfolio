@@ -2,6 +2,14 @@
 
 :root {
     --main-accent-color: #29F9FF;
+    --secondary-accent-color: #FF0051;
+    --menu-border-color: #000;
+    --hero-title-font-size: clamp(1.7rem, 0.7153rem + 1.6368vw, 2.2rem);
+    --default-body-font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+    --pseudo-class-font-size: 0.8rem;
+    --main-tech-list-font-size: clamp(1.4rem, 0.7153rem + 1.6368vw, 1.8rem);
+    --more-tech-list-font-size: clamp(0.7rem, 0.7153rem + 1.6368vw, 1.1rem);
+    --tech-used-in-projects-font-size: 1.1rem;
 }
 
 * {
@@ -14,7 +22,11 @@ body {
     /* background:burlywood; */
     width: 85vw;
     padding-left: 2em;
-    font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+    font-size: var(--default-body-font-size);
+    
+}
+h3 {
+    margin: 0;
 }
 
 em {
@@ -30,18 +42,22 @@ nav {
     padding-bottom: 1rem; 
 }
 
+ul, li {
+    list-style: none;
+}
+
 .menu-button {
 
     background: none;
     border: 0.25ex dotted black;
     border-radius: 0;
     cursor: pointer;
-    font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
+    font-size: var(--default-body-font-size);
 
 }
 
 .hero {
-    font-size: clamp(1.7rem, 0.7153rem + 1.6368vw, 2.2rem);
+    font-size: var(--hero-title-font-size);
     padding-bottom: 3rem;
 }
 
@@ -51,12 +67,117 @@ nav {
 
 .tech {
     display: flex;
-    padding-bottom: 2rem;
-}
-ul, li {
-    list-style: none;
+    margin-bottom: 10rem;
 }
 
+.main-tech {
+    padding-bottom: 2rem;
+    font-size: var(--main-tech-list-font-size);
+}
+.main-tech::before {
+    content: 'TOOLS';
+    position: relative;
+    top: 7px;
+    left: -20px;
+    font-size: var(--pseudo-class-font-size);
+    color: #FF0051;
+}
+.more-tech {
+    font-size: var(--more-tech-list-font-size);
+}
+.more-tech::before {
+    content: 'more tech';
+    position: relative;
+    top: 20px;
+    /* transform-origin: 0 0;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); */
+    font-size: var(--pseudo-class-font-size);
+    color: #FF0051;
+}
+article img {
+    max-width: 50%;
+    float: inline-start;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.photo-right img {
+    float: inline-end;
+    margin-left: 10px;
+}
+.photo-left, .photo-right {
+    margin-bottom: 6rem;
+}
+.project-title-links {
+    margin-bottom: 1rem;
+}
+.project-title-links p {
+    display: inline;
+}
+
+.photo-right img {
+    float: inline-end;
+    margin-left: 10px;
+}
+
+.tech-used {
+    padding-left: 0;
+}
+.tech-used li {
+    display: inline;
+    font-size: var(--tech-used-in-projects-font-size);
+    
+}
+.tech-used::before {
+    content: 'tech';
+    position: relative;
+    top: -10px;
+    color: var(--secondary-accent-color);
+    font-size: var(--pseudo-class-font-size);
+}
+
+.contact-area {
+    margin-top: 15rem;
+    margin-left: 0;
+}
+.contact-area h2 {
+    position: relative;
+    top: 0;
+    right: 1.2rem;
+}
+.svg {
+    position: relative;
+    top: -55rem;
+    z-index: -1;
+    margin-left: -5rem;
+}
+form {
+    position: relative;
+    top: 0rem;
+    left: 1.2rem;
+}
+#submit-form {
+    background: none;
+    border: 0.25ex dotted black;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: var(--default-body-font-size);
+    text-justify: ;
+}
+.form-group {
+    display: grid;
+    margin-bottom: 1rem;
+}
+.form-group label {
+    margin-left: 1rem;
+}
+.form-group input, .form-group textarea {
+    border: 3px var(--menu-border-color) solid;
+    border-radius: 2px;
+    font-size: var(--more-tech-list-font-size);
+}
 
 
 
