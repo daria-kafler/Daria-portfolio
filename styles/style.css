@@ -34,7 +34,8 @@ body {
     padding-right: 2em;
     font-size: var(--default-body-font-size);
     overflow: auto;
-    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
 }
 
 em {
@@ -72,7 +73,12 @@ ul, li {
     z-index: -2;
     top: 0rem;
     left: -1rem;
-    
+    -webkit-animation: circle-spin 5000ms infinite linear;
+}
+
+@-webkit-keyframes circle-spin {
+    from { transform: rotate(359deg); }
+    to { transform: rotate(0deg); }
 }
 
 .about {
@@ -151,7 +157,7 @@ article img {
 
 .contact {
     height: 450px;
-    margin-top: 15rem;
+    margin-top: 9rem;
 }
 .contact-area {
     margin-left: 0;
@@ -161,13 +167,39 @@ article img {
     top: 0;
     right: 1.2rem;
 }
-.svg-background {
+/* .svg-background {
     position: relative;
     top: 236rem;
     z-index: -1;
     margin-left: -3rem;
     margin-right: -2rem;
+} */
+
+.custom-shape-divider-bottom-1631558252 {
+    z-index: -1;
+    position: relative;
+    bottom: -242rem;
+    left: -41px;
+    right: -8px;
+    width: 109%;
+    overflow: -moz-hidden-unscrollable;
+    line-height: 0;
+    transform: rotate(180deg);
 }
+
+.custom-shape-divider-bottom-1631558252 svg {
+    position: relative;
+    display: block;
+    width: calc(116% + 22.3px);
+    height: 552px;
+}
+
+.custom-shape-divider-bottom-1631558252 .shape-fill {
+    fill: #29F9FF;
+}
+
+
+
 form {
     position: relative;
     top: 0rem;
@@ -194,15 +226,10 @@ form {
     border-radius: 2px;
     font-size: var(--more-tech-list-font-size);
 }
-
-
-.svg-hero {
-    -webkit-animation: circle-spin 5000ms infinite linear;
+footer {
+    margin: 3rem;
 }
-@-webkit-keyframes circle-spin {
-    from { transform: rotate(359deg); }
-    to { transform: rotate(0deg); }
-}
+
 
 
 
