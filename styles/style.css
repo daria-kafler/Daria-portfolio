@@ -8,7 +8,7 @@
     --default-body-font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
     --pseudo-class-font-size: 0.8rem;
     --main-tech-list-font-size: clamp(1.4rem, 0.7153rem + 1.6368vw, 1.8rem);
-    --more-tech-list-font-size: clamp(0.7rem, 0.7153rem + 1.6368vw, 1.1rem);
+    --more-tech-list-font-size: clamp(0.7rem, 0.7153rem + 1.6368vw, 1rem);
     --tech-used-in-projects-font-size: 1.1rem;
 }
 
@@ -86,6 +86,7 @@ ul, li {
 
 .main-tech {
     padding-bottom: 2rem;
+    margin-right: 2rem;
     font-size: var(--main-tech-list-font-size);
 }
 .main-tech::before {
@@ -98,16 +99,17 @@ ul, li {
 }
 .more-tech {
     font-size: var(--more-tech-list-font-size);
+    padding-top: 3rem;
 }
 .more-tech::before {
     content: 'more tech';
     position: relative;
-    top: 20px;
-    /* transform-origin: 0 0;
+    top: -1px;
+    transform-origin: 0 0;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg); */
+    -ms-transform: rotate(-90deg);
     font-size: var(--pseudo-class-font-size);
     color: var(--secondary-accent-color);
 }
@@ -125,7 +127,7 @@ article img {
     margin-bottom: 6rem;
 }
 .project-title-links {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .project-title-links p {
     display: inline;
@@ -137,12 +139,12 @@ article img {
 .tech-used li {
     display: inline;
     font-size: var(--tech-used-in-projects-font-size);
-    
+    padding-top: 1rem;
 }
 .tech-used::before {
     content: 'tech';
     position: relative;
-    top: 3px;
+    top: -10px;
     color: var(--secondary-accent-color);
     font-size: var(--pseudo-class-font-size);
 }
@@ -161,9 +163,10 @@ article img {
 }
 .svg-background {
     position: relative;
-    top: -55rem;
+    top: 236rem;
     z-index: -1;
-    margin-left: -5rem;
+    margin-left: -3rem;
+    margin-right: -2rem;
 }
 form {
     position: relative;
