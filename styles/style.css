@@ -31,6 +31,7 @@ body {
     min-height: 100vh;
     max-width: 100%;
     padding-left: 2em;
+    padding-right: 2em;
     font-size: var(--default-body-font-size);
     overflow: auto;
     /* position: fixed; */
@@ -46,7 +47,7 @@ em {
 }
 
 nav {
-    padding-bottom: 1rem; 
+    padding: 1rem 0 3rem 0; 
 }
 
 ul, li {
@@ -65,6 +66,13 @@ ul, li {
 .hero {
     font-size: var(--hero-title-font-size);
     padding-bottom: 3rem;
+}
+.svg-hero {
+    position: relative;
+    z-index: -2;
+    top: 0rem;
+    left: -1rem;
+    
 }
 
 .about {
@@ -134,7 +142,7 @@ article img {
 .tech-used::before {
     content: 'tech';
     position: relative;
-    top: -10px;
+    top: 3px;
     color: var(--secondary-accent-color);
     font-size: var(--pseudo-class-font-size);
 }
@@ -151,7 +159,7 @@ article img {
     top: 0;
     right: 1.2rem;
 }
-svg {
+.svg-background {
     position: relative;
     top: -55rem;
     z-index: -1;
@@ -169,7 +177,7 @@ form {
     border-radius: 0;
     cursor: pointer;
     font-size: var(--default-body-font-size);
-    text-justify: ;
+    /* text-justify: ; */
 }
 .form-group {
     display: grid;
@@ -185,7 +193,13 @@ form {
 }
 
 
-
+.svg-hero {
+    -webkit-animation: circle-spin 5000ms infinite linear;
+}
+@-webkit-keyframes circle-spin {
+    from { transform: rotate(359deg); }
+    to { transform: rotate(0deg); }
+}
 
 
 
