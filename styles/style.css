@@ -49,7 +49,11 @@ em {
 }
 
 nav {
-    padding: 1rem 0 3rem 0; 
+    padding-top: 0.5rem;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
 }
 
 ul, li {
@@ -58,15 +62,19 @@ ul, li {
 
 .menu-button {
     background: none;
-    border: 0.25ex dotted black;
-    border-radius: 0;
+    border: none;
     cursor: pointer;
-    font-size: var(--default-body-font-size);
-
+    font-size: var(--pseudo-class-font-size);
 }
-
+.menu-button:hover {
+    border: dotted var(--secondary-accent-color) 2px;
+}
+id {
+    padding-top: 0.5rem;
+}
 .hero {
     font-size: var(--hero-title-font-size);
+    margin-top: 4rem;
     padding-bottom: 3rem;
 }
 .svg-hero {
@@ -235,10 +243,10 @@ footer {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 272px;
+    right: 282px;
     font-size: 4rem;
     margin-left: 50px;
-    top: -20px;
+    top: -29px;
 }
 
 #topBtn {
