@@ -10,18 +10,18 @@
     <script src="scripts/app.js" charset="utf-8"></script>
 </head>
 <body>
+    <button onclick="backToTop()" id="topBtn" title="Back to top">Top</button>
     <nav>
-        
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-          <button class="menu-button" onClick="openNav()">Menu</button>
+            <a href="#" onclick="closeNav()">Home</a>
+            <a href="#about-and-tech" onclick="closeNav()">About</a>
+            <a href="#projects" onclick="closeNav()">Projects</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+        <button class="menu-button" onClick="openNav()">Menu</button>
     </nav>
-
+    <a id="about-and-tech"></a>
     <section class="hero">
         <H1>Hi, I'm <em>Daria</em>
             <svg class="svg-hero"
@@ -218,9 +218,8 @@
         </div>
     </section>
     </section>
-    <!-- <div class="scroll-container">
-        <div class="scroll-text"> -->
-                <marquee width="100vw" direction="left" height="50px">
+        <a id="projects"></a>
+        <marquee width="100vw" direction="left" height="50px">
         <ul>
             <li>Fresh summer crop</li>
             <li>projects projects projects</li>
@@ -231,7 +230,6 @@
     </marquee>
         <!-- </div>
     </div> -->
-
     <section class="photo-left" class="projects">
         <div>
             <div class="project-title-links">
@@ -319,6 +317,7 @@
         </ol>
     </section>
     <section class="contact">
+        <a id="contact"></a>
         <div class="contact-area">
             <h2>Say Hi</h2>
         <form action="https://formspree.io/me@dariakafler.com" method="POST">
@@ -352,11 +351,19 @@
 <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "100%"
-      console.log('opennav clicked')
     }
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0"
-      console.log('opennav clicked')
     }
+    topButton = document.getElementById('topBtn')
+    window.onscroll = function() {backToTop()}
+    function backToTop() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topButton.style.display = 'block'
+        } else {
+            topButton.style.display = 'none'
+        }
+        }
+    
     </script>
 </html>
