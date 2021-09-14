@@ -3,8 +3,10 @@
 :root {
     --main-accent-color: #29F9FF;
     --secondary-accent-color: #FF0051;
+    --background-color: #FFFF;
     --text-color:#000;
     --menu-border-color: #000;
+
     --hero-title-font-size: clamp(1.7rem, 0.7153rem + 1.6368vw, 2.2rem);
     --default-body-font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem);
     --pseudo-class-font-size: 0.8rem;
@@ -62,9 +64,9 @@ ul, li {
 
 .menu-button {
     background: none;
-    border: none;
+    border: dotted var(--background-color) 2px;
     cursor: pointer;
-    font-size: var(--pseudo-class-font-size);
+    font-size: var(--more-tech-list-font-size);
 }
 .menu-button:hover {
     border: dotted var(--secondary-accent-color) 2px;
@@ -153,8 +155,23 @@ article img {
 .project-title-links {
     margin-bottom: 2rem;
 }
+.project-title-links h3 {
+    font-size: var(--default-body-font-size);
+}
 .project-title-links p {
     display: inline;
+    font-size: var(--tech-used-in-projects-font-size);
+}
+.project-title-links p a {
+    text-decoration: none;
+    color:var(--text-color)
+}
+.project-title-links p a:visited {
+    color:var(--text-color)
+}
+.project-title-links p a:hover {
+    color:var(--main-accent-color);
+    background-color: var(--secondary-accent-color);
 }
 .tech-used li {
     display: inline;
@@ -252,7 +269,7 @@ footer {
 #topBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 30px;
     z-index: 99;
     border: none;
