@@ -9,7 +9,7 @@
     --pseudo-class-font-size: 0.8rem;
     --main-tech-list-font-size: clamp(1.4rem, 0.7153rem + 1.6368vw, 1.8rem);
     --more-tech-list-font-size: clamp(0.7rem, 0.7153rem + 1.6368vw, 1rem);
-    --tech-used-in-projects-font-size: 1.1rem;
+    --tech-used-in-projects-font-size: 0.9rem;
 }
 
 * {
@@ -69,16 +69,7 @@ ul, li {
     padding-bottom: 3rem;
 }
 .svg-hero {
-    position: relative;
-    z-index: -2;
-    top: 0rem;
-    left: -1rem;
-    -webkit-animation: circle-spin 5000ms infinite linear;
-}
-
-@-webkit-keyframes circle-spin {
-    from { transform: rotate(359deg); }
-    to { transform: rotate(0deg); }
+    display: none;
 }
 
 .about {
@@ -87,7 +78,7 @@ ul, li {
 
 .tech {
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 
 .main-tech {
@@ -119,19 +110,44 @@ ul, li {
     font-size: var(--pseudo-class-font-size);
     color: var(--secondary-accent-color);
 }
-article img {
-    max-width: 50%;
-    float: inline-start;
-    margin-right: 10px;
-    margin-bottom: 10px;
+marquee {
+    width: 100%;
 }
-.photo-right img {
-    float: inline-end;
-    margin-left: 10px;
+marquee ul li {
+    display: inline;
+    width: 100%;
 }
+marquee ul li::after {
+    content: '*';
+}
+/* .scroll-container {
+    width: 100vw;
+    overflow: hidden;
+} 
+.scroll-text {
+    -webkit-transform: translateX(100%);
+    -webkit-animation: my-animation 15s linear infinite;
+}
+.scroll-text ul li {
+    display: inline;
+}
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%);}
+    to { -webkit-transform: translateX(-100%);}
+}  */
+
 .photo-left, .photo-right {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
+article {
+    line-height: 1.5em;
+    margin-bottom: 1.5rem;
+}
+article img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
 .project-title-links {
     margin-bottom: 2rem;
 }
@@ -139,13 +155,10 @@ article img {
     display: inline;
 }
 
-.tech-used {
-    padding-left: 0;
-}
 .tech-used li {
     display: inline;
     font-size: var(--tech-used-in-projects-font-size);
-    padding-top: 1rem;
+
 }
 .tech-used::before {
     content: 'tech';
@@ -154,10 +167,11 @@ article img {
     color: var(--secondary-accent-color);
     font-size: var(--pseudo-class-font-size);
 }
-
 .contact {
     height: 450px;
     margin-top: 9rem;
+    display: flex;
+    justify-content: center;
 }
 .contact-area {
     margin-left: 0;
@@ -175,7 +189,7 @@ article img {
     margin-right: -2rem;
 } */
 
-.custom-shape-divider-bottom-1631558252 {
+/* .custom-shape-divider-bottom-1631558252 {
     z-index: -1;
     position: relative;
     bottom: -242rem;
@@ -196,15 +210,13 @@ article img {
 
 .custom-shape-divider-bottom-1631558252 .shape-fill {
     fill: #29F9FF;
-}
+} */
 
 
 
 form {
     position: relative;
-    top: 0rem;
-    left: 1.2rem;
-    width: max-content;
+    width: 85vw;
 }
 #submit-form {
     background: none;
@@ -228,6 +240,7 @@ form {
 }
 footer {
     margin: 3rem;
+    text-align: center;
 }
 
 
@@ -238,4 +251,29 @@ footer {
     body {
         background: rgb(112, 112, 112);
     }
+    .svg-hero {
+        display:inline;
+        position: relative;
+        z-index: -2;
+        top: 0rem;
+        left: -1rem;
+        -webkit-animation: circle-spin 5000ms infinite linear;
+    }
+    @-webkit-keyframes circle-spin {
+        from { transform: rotate(359deg); }
+        to { transform: rotate(0deg); }
+    }
+
+
+    article img {
+        max-width: 33%;
+        float: inline-start;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .photo-right img {
+        float: inline-end;
+        margin-left: 10px;
+    }
+
 }
