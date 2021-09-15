@@ -54,7 +54,9 @@ em {
 ul, li {
     list-style: none;
 }
-
+.whitespace{
+    color: var(--transparent-background-color);
+}
 /* Back to Top button */
 #topBtn {
     display: none;
@@ -79,6 +81,7 @@ ul, li {
 /* Navbar */
 nav {
     padding-top: 0.25rem;
+    padding-bottom: 5px;
     position: fixed;
     z-index: 99;
     background-color: var(--transparent-background-color);
@@ -86,12 +89,12 @@ nav {
 }
 .menu-button {
     background: none;
-    border: dotted rgba(255, 255, 255, 0.0) 2px;
     cursor: pointer;
     font-size: var(--more-tech-list-font-size);
+    border:none;
 }
 .menu-button:hover {
-    border: dotted var(--secondary-accent-color) 2px;
+    color: var(--secondary-accent-color);
 }
 .sidenav {
     height: 100%;
@@ -244,9 +247,25 @@ article img {
     color: var(--secondary-accent-color);
     font-size: var(--pseudo-class-font-size);
 }
+.tech-used:last-child{
+    margin-bottom: 4rem;
+}
+/* Color block shape */
+.bottom-wrapper {
+    background-color: var(--main-accent-color);
+}
+.bottom-wrapper:before{
+    content: "";
+    background-color: var(--main-accent-color);
+    position: absolute;
+    z-index: -2;
+    width: 196.5vw;
+    left: -96vw;
+    height: 90%;
+}
 .contact {
     height: 450px;
-    margin-top: 6rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
 }
@@ -255,6 +274,7 @@ article img {
 }
 .contact-area h2 {
     margin-bottom: 2rem;
+    text-align: center;
 }
 form {
     position: relative;
@@ -266,15 +286,17 @@ form {
     border-radius: 0;
     cursor: pointer;
     font-size: var(--default-body-font-size);
-    position: relative;
-    left: 14.25rem;
+}
+#submit-form:hover {
+    color:var(--main-accent-color);
+    background-color: var(--secondary-accent-color);
 }
 .form-group {
     display: grid;
     margin-bottom: 1rem;
 }
 .form-group label {
-    margin-left: 1rem;
+    /* text-align: right; */
 }
 .form-group input, .form-group textarea {
     border: 3px var(--menu-border-color) solid;
@@ -282,8 +304,7 @@ form {
     font-size: var(--more-tech-list-font-size);
 }
 footer {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     font-size: var(--pseudo-class-font-size);
 }
@@ -298,7 +319,7 @@ footer {
 /* This applies from 600px onwards screen sizes */
 @media (min-width: 600px){
     body {
-        background: rgb(112, 112, 112);
+        /* background: rgb(112, 112, 112); */
     }
     .svg-hero {
         display:inline;
