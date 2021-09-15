@@ -281,7 +281,7 @@ article img {
 }
 .interests-wrapper {
     display: grid;
-    grid-template-columns: 12rem auto;
+    grid-template-columns: 50% auto;
     grid-template-rows: 17rem auto;   
     grid-column-gap: 8px;
 }
