@@ -273,6 +273,7 @@ article img {
     margin-bottom: 4rem;
 }
 
+/* Interests */
 .more-about img {
     width: 100%;
     opacity: 75%;
@@ -280,16 +281,17 @@ article img {
 .interests-wrapper {
     display: grid;
     grid-template-columns: 12rem auto;
-    grid-template-rows: 21rem auto;   
+    grid-template-rows: 17rem auto;   
+    grid-column-gap: 8px;
 }
 .more-about h4 {
-    font-size: var(--default-body-font-size);
+    font-size: var(--more-tech-list-font-size);
 }
 .more-about p {
-    font-size: var(--more-tech-list-font-size);
+    font-size: var(--tech-used-in-projects-font-size);
 }
 .more-about article {
-    font-size: var(--more-tech-list-font-size);
+    font-size: var(--tech-used-in-projects-font-size);
 }
 
 /* Color block shape */
@@ -305,6 +307,8 @@ article img {
     left: -96vw;
     height: 90%;
 }
+
+/* Contact form area */
 .contact {
     height: 450px;
     margin-top: 8rem;
