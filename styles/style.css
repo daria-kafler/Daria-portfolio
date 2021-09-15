@@ -4,6 +4,7 @@
     --main-accent-color: #29F9FF;
     --secondary-accent-color: #FF0051;
     --background-color: #FFFF;
+    --transparent-background-color: rgba(255, 255, 255, 0.5);
     --text-color:#000;
     --menu-border-color: #000;
 
@@ -50,27 +51,86 @@ em {
     text-decoration-skip-ink: none;
 }
 
-nav {
-    padding-top: 0.5rem;
-    position: fixed;
-    z-index: 99;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-}
-
 ul, li {
     list-style: none;
 }
 
+/* Back to Top button */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    outline: none;
+    border: var(--transparent-background-color);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    background-color: var(--transparent-background-color);
+    cursor: pointer;
+    font-size: var(--more-tech-list-font-size);
+}
+#topBtn:hover {
+    cursor: pointer;
+    background-color: var(--transparent-background-color);
+    color:var(--secondary-accent-color);
+}
+/* Navbar */
+nav {
+    padding-top: 0.25rem;
+    position: fixed;
+    z-index: 99;
+    background-color: var(--transparent-background-color);
+    width: 100%;
+}
 .menu-button {
     background: none;
-    border: dotted var(--background-color) 2px;
+    border: dotted rgba(255, 255, 255, 0.0) 2px;
     cursor: pointer;
     font-size: var(--more-tech-list-font-size);
 }
 .menu-button:hover {
     border: dotted var(--secondary-accent-color) 2px;
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--main-accent-color);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+}
+.sidenav:hover {
+    cursor: pointer;
+}
+.sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: var(--hero-title-font-size);
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 282px;
+    font-size: 4rem;
+    margin-left: 50px;
+    top: -29px;
+}
+
+
 id {
     padding-top: 0.5rem;
 }
@@ -186,7 +246,7 @@ article img {
 }
 .contact {
     height: 450px;
-    margin-top: 9rem;
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
 }
@@ -194,9 +254,7 @@ article img {
     margin-left: 0;
 }
 .contact-area h2 {
-    position: relative;
-    top: 0;
-    right: 1.2rem;
+    margin-bottom: 2rem;
 }
 form {
     position: relative;
@@ -208,7 +266,8 @@ form {
     border-radius: 0;
     cursor: pointer;
     font-size: var(--default-body-font-size);
-    /* text-justify: ; */
+    position: relative;
+    left: 14.25rem;
 }
 .form-group {
     display: grid;
@@ -223,67 +282,16 @@ form {
     font-size: var(--more-tech-list-font-size);
 }
 footer {
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
+    font-size: var(--pseudo-class-font-size);
 }
 
 
-/* Navbar */
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--main-accent-color);
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-    text-align: center;
-}
-.sidenav:hover {
-    cursor: pointer;
-}
-.sidenav a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: var(--hero-title-font-size);
-    color: var(--text-color);
-    display: block;
-    transition: 0.3s;
-}
-.sidenav a:hover {
-    color: #f1f1f1;
-    cursor: pointer;
-}
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 282px;
-    font-size: 4rem;
-    margin-left: 50px;
-    top: -29px;
-}
 
-#topBtn {
-    display: none;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: var(--main-accent-color);
-    color:var(--secondary-accent-color);
-    cursor: pointer;
-    font-size: var(--more-tech-list-font-size);
-}
-#topBtn:hover {
-    cursor: pointer;
-    background-color: var(--secondary-accent-color);
-    color: var(--main-accent-color);
-}
+
+
 
 
 
