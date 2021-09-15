@@ -67,8 +67,9 @@ ul, li {
     outline: none;
     border: var(--transparent-background-color);
     border-radius: 50%;
-    width: 34px;
-    height: 34px;
+    width: 42px;
+    height: 42px;
+    text-transform: uppercase;
     background-color: var(--transparent-background-color);
     cursor: pointer;
     font-size: var(--more-tech-list-font-size);
@@ -329,8 +330,8 @@ form {
 }
 #submit-form {
     background: none;
-    border: 0.25ex dotted black;
-    border-radius: 0;
+    border: none;
+    border-radius: none;
     cursor: pointer;
     font-size: var(--default-body-font-size);
 }
@@ -349,6 +350,14 @@ form {
     border: 3px var(--menu-border-color) solid;
     border-radius: 2px;
     font-size: var(--more-tech-list-font-size);
+}
+.offsite-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+.offsite-links img {
+    width: 34px;
+    height: 34px;
 }
 footer {
     margin-bottom: 0.5rem;
