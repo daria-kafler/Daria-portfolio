@@ -145,6 +145,28 @@ id {
 .svg-hero {
     display: none;
 }
+.profile-img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 43%;
+    left: 50%;
+    overflow: visible;
+    opacity: 0.25;
+    z-index: -2;
+}
+.profile-img img {
+    position:relative;
+    max-width: 200%;
+    max-height: 100%;
+    margin-top: -85%;
+    margin-left: -54%;
+    /* position: fixed;
+    top: 9rem;
+    left: 9rem;
+    z-index: -2;
+    opacity: 20%; */
+}
 .tech {
     display: flex;
     margin-bottom: 1.5rem;
@@ -250,6 +272,18 @@ article img {
 .tech-used:last-child{
     margin-bottom: 4rem;
 }
+
+.more-about img {
+    width: 100%;
+    opacity: 75%;
+}
+.more-about p {
+    font-size: var(--more-tech-list-font-size);
+}
+.more-about article {
+    font-size: var(--more-tech-list-font-size);
+}
+
 /* Color block shape */
 .bottom-wrapper {
     background-color: var(--main-accent-color);
@@ -279,6 +313,7 @@ article img {
 form {
     position: relative;
     width: 85vw;
+    padding-bottom: 2rem;
 }
 #submit-form {
     background: none;
