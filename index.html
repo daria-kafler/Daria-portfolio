@@ -16,9 +16,9 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" onclick="closeNav()">Home</a>
-            <a href="#about-and-tech" onclick="closeNav()">Who</a>
+            <a href="#about-and-tech" onclick="closeNav()">About</a>
             <a href="#projects" onclick="closeNav()">Projects</a>
-            <a href="#more-about" onclick="closeNav()">am I</a>
+            <a href="#more-about" onclick="closeNav()">More about</a>
             <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
         <button class="menu-button" onClick="openNav()">Menu</button>
@@ -226,106 +226,107 @@
         <a id="projects" class="whitespace">whitespace</a>
         <marquee width="100vw" direction="left" height="50px">
         <ul>
-            <li>Fresh summer crop</li>
-            <li>projects projects projects</li>
+            <li>See my projects below</li>
+            <li>Some of the things I&apos;ve done</li>
             <li>Check them out</li>
             <li>Lovingly sown and grown</li>
             <li>projects projects projects</li>
         </ul>
     </marquee>
-        <!-- </div>
-    </div> -->
-    <section class="photo-left" class="projects">
-        <div>
+    <div class="projects-wrapper">
+        <section class="photo-left" class="projects">
+            <div>
+                <div class="project-title-links">
+                    <h3>Project: "Prospect in Place"</h3>
+                    <p>[ <a href="">Source code</a> ]</p>
+                    <p>[ <a href="">Visit</a> ]</p>
+                </div>
+                <article>
+                    <img src="styles/assets/project4frontpagescreenshot.png" id="img-project4" alt='Front page for the website Prosper in Place, a colourful design with trendy cartoon woman, with the copy saying Whatever life throws at you why not be prepared?'>
+                    A 7 day solo project, where I planned, designed and built a CRUD web app using PERN stack. 
+                    This app aims to make emergency preparadness more accessibe to those who are not normally 
+                    interested in it, by changing up the military design language normally associated with prepping, 
+                    to something softer and more appealing to young urbanites.			
+                </article>
+                <ol class="tech-used">
+                    <li>Python</li>
+                    <li>PostgreSQL & Django</li>
+                    <li>Express</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Bootstrap</li>
+                    <li>Git</li>
+                    <li>GIMP</li>
+                </ol>
+            </div>
+        </section>
+        <section class="photo-right" class="projects">
             <div class="project-title-links">
-                <h3>Project: "Prospect in Place"</h3>
+                <h3>Project: "Heiss Drinks"</h3>
                 <p>[ <a href="">Source code</a> ]</p>
                 <p>[ <a href="">Visit</a> ]</p>
             </div>
             <article>
-                <img src="styles/assets/project4frontpagescreenshot.png" id="img-project4" alt='Front page for the website Prosper in Place, a colourful design with trendy cartoon woman, with the copy saying Whatever life throws at you why not be prepared?'>
-                A 7 day solo project, where I planned, designed and built a CRUD web app using PERN stack. 
-                This app aims to make emergency preparadness more accessibe to those who are not normally 
-                interested in it, by changing up the military design language normally associated with prepping, 
-                to something softer and more appealing to young urbanites.			
+                <img src="styles/assets/project03screenshot01.png" alt="Front page of website for special teas and coffees from around the world, the background shows a cup splashing out of it coffee drink turning into coffee beans. The main copy text says Hot Brews from Around the World.">
+                A 10 day project with three other team members, where we planned, designed and built a CRUD 
+                app using MERN stack. My contributions to this project were the Index page and Navbar coding 
+                and styling, and copy on front and index pages. The back-end was team-coded.
             </article>
             <ol class="tech-used">
-                <li>Python</li>
-                <li>PostgreSQL & Django</li>
+                <li>MongoDB & Mongoose</li>
                 <li>Express</li>
                 <li>React.js</li>
                 <li>Node.js</li>
                 <li>Bootstrap</li>
                 <li>Git</li>
+            </ol>
+        </section>
+        <section class="photo-left" class="projects">
+            <div class="project-title-links">
+                <h3>Project: "Take me someplace..."</h3>
+                <p>[ <a href="">Source code</a> ]</p>
+                <p>[ <a href="">Visit</a> ]</p>
+            </div>
+            <article>
+                <img src="styles/assets/Project02Screenshot.png" alt="A webpage screenshot where the title says 'Manaus, Brazil seems nice at the moment!', below it the current temperatrure of the place and a forecast below that. after those there are two buttons: One says 'Lets gooo' and the other says 'What else you got?'">
+                A one day Hackathon solo project where I planned, designed and built a small front-end app, 
+                consuming a weather API. This is an app for those stuck in one type of weather when they'd 
+                much rather be in its complete opposite. Overall the project took a little over 12 hours.
+            </article>
+            <ol class="tech-used">
+                <li>React.js</li>
+                <li>Axios</li>
+                <li>Node.js</li>
+                <li>Bulma framework</li>
+                <li>Git</li>
+            </ol>
+        </section>
+        <section class="photo-right" class="projects">
+            <div class="project-title-links">
+                <h3>Project: "Get to the Pub"</h3>
+                <p>[ <a href="">Source code</a> ]</p>
+                <p>[ <a href="">Visit</a> ]</p>
+            </div>
+            <article>
+                <img src="styles/assets/Project01Screenshot.jpg" alt="A webpage screenshot showing a Frogger type game (where player needs to cross the road while avoiding obstacles). The picture is a top down drawing of a boy crossing the road, where there are cars and other people, and beyond the road there is a drawing of a pub. on top of the game view, there is a counter saying 'You have 3 lives left'.">
+                A 7 day solo project to create a single page game using Vanilla JavaScript. This was the 
+                first project as part of the General Assembly Full-Stack course, following 4 weeks of learning.
+            </article>
+            <ol class="tech-used">
+                <li>Vanilla JavaScript (SE6)</li>
+                <li>HTML</li>
+                <li>Vanilla CSS</li>
+                <li>Procreate</li>
                 <li>GIMP</li>
             </ol>
-        </div>
-    </section>
-    <section class="photo-right" class="projects">
-        <div class="project-title-links">
-            <h3>Project: "Heiss Drinks"</h3>
-            <p>[ <a href="">Source code</a> ]</p>
-            <p>[ <a href="">Visit</a> ]</p>
-        </div>
-        <article>
-            <img src="styles/assets/project03screenshot01.png" alt="Front page of website for special teas and coffees from around the world, the background shows a cup splashing out of it coffee drink turning into coffee beans. The main copy text says Hot Brews from Around the World.">
-            A 10 day project with three other team members, where we planned, designed and built a CRUD 
-            app using MERN stack. My contributions to this project were the Index page and Navbar coding 
-            and styling, and copy on front and index pages. The back-end was team-coded.
-        </article>
-        <ol class="tech-used">
-            <li>MongoDB & Mongoose</li>
-            <li>Express</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Bootstrap</li>
-            <li>Git</li>
-        </ol>
-    </section>
-    <section class="photo-left" class="projects">
-        <div class="project-title-links">
-            <h3>Project: "Take me someplace..."</h3>
-            <p>[ <a href="">Source code</a> ]</p>
-            <p>[ <a href="">Visit</a> ]</p>
-        </div>
-        <article>
-            <img src="styles/assets/Project02Screenshot.png" alt="A webpage screenshot where the title says 'Manaus, Brazil seems nice at the moment!', below it the current temperatrure of the place and a forecast below that. after those there are two buttons: One says 'Lets gooo' and the other says 'What else you got?'">
-            A one day Hackathon solo project where I planned, designed and built a small front-end app, 
-            consuming a weather API. This is an app for those stuck in one type of weather when they'd 
-            much rather be in its complete opposite. Overall the project took a little over 12 hours.
-        </article>
-        <ol class="tech-used">
-            <li>React.js</li>
-            <li>Axios</li>
-            <li>Node.js</li>
-            <li>Bulma framework</li>
-            <li>Git</li>
-        </ol>
-    </section>
-    <section class="photo-right" class="projects">
-        <div class="project-title-links">
-            <h3>Project: "Get to the Pub"</h3>
-            <p>[ <a href="">Source code</a> ]</p>
-            <p>[ <a href="">Visit</a> ]</p>
-        </div>
-        <article>
-            <img src="styles/assets/Project01Screenshot.jpg" alt="A webpage screenshot showing a Frogger type game (where player needs to cross the road while avoiding obstacles). The picture is a top down drawing of a boy crossing the road, where there are cars and other people, and beyond the road there is a drawing of a pub. on top of the game view, there is a counter saying 'You have 3 lives left'.">
-            A 7 day solo project to create a single page game using Vanilla JavaScript. This was the 
-            first project as part of the General Assembly Full-Stack course, following 4 weeks of learning.
-        </article>
-        <ol class="tech-used">
-            <li>Vanilla JavaScript (SE6)</li>
-            <li>HTML</li>
-            <li>Vanilla CSS</li>
-            <li>Procreate</li>
-            <li>GIMP</li>
-        </ol>
-    </section>
+        </section>
+    </div>
+    
     <a id="more-about" class="whitespace">whitespace</a>
     <marquee width="100vw" direction="left" height="50px">
     <ul>
         <li>Who even am I?</li>
-        <li>Interests Interests Interests</li>
+        <li>Read below for more</li>
         <li>What kind of person is this?</li>
         <li>Are we even human?</li>
         <li>Interests Interests Interests</li>

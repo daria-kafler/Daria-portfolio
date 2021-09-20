@@ -87,6 +87,8 @@ nav {
     z-index: 99;
     background-color: var(--transparent-background-color);
     width: 100%;
+    margin-left: -4rem;
+    padding-left: 8rem;
 }
 .menu-button {
     background: none;
@@ -228,7 +230,7 @@ marquee ul li:last-child::after {
     top: -0.25rem;
 }
 .photo-left, .photo-right {
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 article {
     line-height: 1.5em;
@@ -393,7 +395,18 @@ footer {
         to { transform: rotate(0deg); }
     }
 
-
+    .tech {
+        justify-content: center;
+        margin-right: 10rem;
+    }
+    .projects-wrapper {
+        display: grid;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .photo-left, .photo-right {
+        margin-top: 3rem;
+    }
     article img {
         max-width: 33%;
         float: inline-start;
@@ -404,7 +417,6 @@ footer {
         float: inline-end;
         margin-left: 10px;
     }
-
     .more-about {
         margin-bottom: 2rem;
     }
@@ -415,12 +427,11 @@ footer {
         margin-right: 2%;
         float: left;
     }
-
     .contact-area {
         padding-left: 33%;
         padding-right: 33%;
     }
-    }
+
     .contact form {
         width: 100%;
     }
