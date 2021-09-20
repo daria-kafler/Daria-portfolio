@@ -433,7 +433,7 @@ footer {
         float: left;
         border-radius: 50%;
     }
-    .bottom-wrapper {
+    /* .bottom-wrapper {
         background-color: var(--main-accent-color);
     }
     .bottom-wrapper:before{
@@ -444,7 +444,7 @@ footer {
         width: 196.5vw;
         left: -96vw;
         height: 90%;
-    }
+    } */
     .contact-area {
         padding-left: 33%;
         padding-right: 33%;
