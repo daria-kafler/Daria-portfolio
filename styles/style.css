@@ -309,9 +309,8 @@ article img {
     background-color: var(--main-accent-color);
     position: absolute;
     z-index: -2;
-    width: 196.5vw;
     left: -96vw;
-    height: 90%;
+    height: 80vw;
 }
 
 /* Contact form area */
