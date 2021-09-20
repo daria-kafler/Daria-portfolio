@@ -372,9 +372,6 @@ footer {
 
 /* This applies from 600px onwards screen sizes */
 @media (min-width: 600px){
-    body {
-        /* background: rgb(112, 112, 112); */
-    }
     .sidenav .closebtn {
         position: absolute;
         right: 88%;
@@ -465,7 +462,6 @@ footer {
         margin-left: 50px;
         top: -2%;
     }
-
     .projects-wrapper {
         display: grid;
         grid-template-columns: 33% 33%;
@@ -486,6 +482,8 @@ footer {
     }
 }
 
+
+/* This applies from 1260px onwards screen sizes */
 @media (min-width: 1260px) {
     .sidenav .closebtn {
         position: absolute;

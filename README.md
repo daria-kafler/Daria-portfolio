@@ -1,4 +1,6 @@
 # Portfolio
-## Work in Progress ...
+## Work in Progress 
 
-## HEADS UP: Page currently only for mobile, so please view at width 600px or less.
+## 99% Complete ...
+
+Full Readme to come.
