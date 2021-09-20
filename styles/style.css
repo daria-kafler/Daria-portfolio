@@ -41,6 +41,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+a {
+    text-decoration: none;
+}
 
 em {
     font-style: normal;
@@ -163,11 +166,6 @@ id {
     max-height: 100%;
     margin-top: -80%;
     margin-left: -42%;
-    /* position: fixed;
-    top: 9rem;
-    left: 9rem;
-    z-index: -2;
-    opacity: 20%; */
 }
 .tech {
     display: flex;
@@ -285,6 +283,7 @@ article img {
 .interests-wrapper {
     margin-left: 1rem;
     margin-top: 2rem;
+    padding-bottom: 1rem;
 }
 .more-about h4 {
     font-size: var(--more-tech-list-font-size);
@@ -303,25 +302,25 @@ article img {
 /* Color block shape */
 .bottom-wrapper {
     background-color: var(--main-accent-color);
+    margin-right: -9vw;
+    margin-left: -9vw;
 }
 .bottom-wrapper:before{
     content: "";
     background-color: var(--main-accent-color);
     position: absolute;
     z-index: -2;
-    left: -96vw;
-    height: 80vw;
 }
 
 /* Contact form area */
 .contact {
-    height: 450px;
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 .contact-area {
-    margin-left: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .contact-area h2 {
     margin-bottom: 2rem;
@@ -363,15 +362,11 @@ form {
     height: 34px;
 }
 footer {
-    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     font-size: var(--pseudo-class-font-size);
 }
-
-
-
-
-
 
 
 
@@ -399,7 +394,6 @@ footer {
         from { transform: rotate(359deg); }
         to { transform: rotate(0deg); }
     }
-
     .tech {
         justify-content: center;
         margin-right: 10rem;
@@ -448,12 +442,8 @@ footer {
         padding-left: 35%;
         padding-right: 35%;
     }
-
     .contact form {
         width: 100%;
-    }
-    footer {
-        margin-top: 15%;
     }
 
 }
@@ -463,6 +453,10 @@ footer {
     
     .menu-button, #topBtn {
         font-size: var(--default-body-font-size);
+    }
+    #topBtn {
+        width: 60px;
+        height: 60px;
     }
     .sidenav .closebtn {
         position: absolute;
