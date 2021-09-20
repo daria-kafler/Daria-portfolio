@@ -433,21 +433,20 @@ footer {
         float: left;
         border-radius: 50%;
     }
-    /* .bottom-wrapper {
+    .bottom-wrapper {
         background-color: var(--main-accent-color);
+        margin-right: -50vw;
+        margin-left: -50vw;
     }
     .bottom-wrapper:before{
         content: "";
         background-color: var(--main-accent-color);
         position: absolute;
         z-index: -2;
-        width: 196.5vw;
-        left: -96vw;
-        height: 90%;
-    } */
+    }
     .contact-area {
-        padding-left: 33%;
-        padding-right: 33%;
+        padding-left: 35%;
+        padding-right: 35%;
     }
 
     .contact form {
@@ -485,8 +484,8 @@ footer {
         padding-right: 5rem;
     }
     .contact-area {
-        padding-left: 35%;
-        padding-right: 35%;
+        padding-left: 38%;
+        padding-right: 38%;
     }
     .offsite-links {
         margin-top: 2rem;
@@ -503,5 +502,9 @@ footer {
     }
     .more-about img {
         shape-outside: margin-box;
+    }
+    .contact-area {
+        padding-left: 42%;
+        padding-right: 42%;
     }
 }
