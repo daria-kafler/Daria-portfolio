@@ -171,6 +171,7 @@ id {
 .tech {
     display: flex;
     margin-bottom: 1.5rem;
+    justify-content: space-evenly;
 }
 .main-tech {
     padding-bottom: 2rem;
@@ -280,16 +281,18 @@ article img {
     opacity: 75%;
 }
 .interests-wrapper {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 17rem auto;   
-    grid-column-gap: 8px;
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 .more-about h4 {
     font-size: var(--more-tech-list-font-size);
 }
+.more-about h3 {
+    display: inline;
+}
 .more-about p {
     font-size: var(--tech-used-in-projects-font-size);
+    display: inline;
 }
 .more-about article {
     font-size: var(--tech-used-in-projects-font-size);
@@ -313,11 +316,11 @@ article img {
 .contact {
     height: 450px;
     margin-top: 8rem;
-    display: flex;
-    justify-content: center;
 }
 .contact-area {
     margin-left: 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .contact-area h2 {
     margin-bottom: 2rem;
@@ -400,6 +403,29 @@ footer {
     .photo-right img {
         float: inline-end;
         margin-left: 10px;
+    }
+
+    .more-about {
+        margin-bottom: 2rem;
+    }
+    .more-about img {
+        max-width: 30%;
+        opacity: 80%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+    }
+
+    .contact-area {
+        padding-left: 33%;
+        padding-right: 33%;
+    }
+    }
+    .contact form {
+        width: 100%;
+    }
+    footer {
+        margin-top: 15%;
     }
 
 }
