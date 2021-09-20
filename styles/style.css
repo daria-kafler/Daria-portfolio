@@ -4,7 +4,7 @@
     --main-accent-color: #29F9FF;
     --secondary-accent-color: #FF0051;
     --background-color: #FFFF;
-    --transparent-background-color: rgba(255, 255, 255, 0.5);
+    --transparent-background-color: rgba(255, 255, 255, 1);
     --text-color:#000;
     --menu-border-color: #000;
 
@@ -129,11 +129,10 @@ nav {
 }
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 282px;
+    right: 85%;
     font-size: 4rem;
     margin-left: 50px;
-    top: -29px;
+    top: -2%;
 }
 
 
@@ -162,8 +161,8 @@ id {
     position:relative;
     max-width: 200%;
     max-height: 100%;
-    margin-top: -85%;
-    margin-left: -54%;
+    margin-top: -80%;
+    margin-left: -42%;
     /* position: fixed;
     top: 9rem;
     left: 9rem;
@@ -281,6 +280,7 @@ article img {
 .more-about img {
     width: 100%;
     opacity: 75%;
+    border-radius: 50%;
 }
 .interests-wrapper {
     margin-left: 1rem;
@@ -330,7 +330,6 @@ article img {
 }
 form {
     position: relative;
-    width: 85vw;
     padding-bottom: 2rem;
 }
 #submit-form {
@@ -426,6 +425,19 @@ footer {
         margin-left: 2%;
         margin-right: 2%;
         float: left;
+        border-radius: 50%;
+    }
+    .bottom-wrapper {
+        background-color: var(--main-accent-color);
+    }
+    .bottom-wrapper:before{
+        content: "";
+        background-color: var(--main-accent-color);
+        position: absolute;
+        z-index: -2;
+        width: 196.5vw;
+        left: -96vw;
+        height: 90%;
     }
     .contact-area {
         padding-left: 33%;
@@ -439,4 +451,26 @@ footer {
         margin-top: 15%;
     }
 
+}
+
+/* This applies from 1000px onwards screen sizes */
+@media (min-width: 1000px) {
+    .projects-wrapper {
+        display: grid;
+        grid-template-columns: 33% 33%;
+        justify-content: space-evenly;
+    }
+    article img {
+        max-width: 100%;
+    }
+    .interests-wrapper {
+        padding-right: 5rem;
+    }
+    .contact-area {
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+    .offsite-links {
+        margin-top: 2rem;
+    }
 }
