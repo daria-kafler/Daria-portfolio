@@ -467,7 +467,7 @@ footer {
     }
     .sidenav .closebtn {
         position: absolute;
-        right: 94%;
+        right: 88%;
         font-size: 4rem;
         margin-left: 50px;
         top: -2%;
@@ -496,7 +496,7 @@ footer {
 @media (min-width: 1260px) {
     .sidenav .closebtn {
         position: absolute;
-        right: 98%;
+        right: 94.5%;
         font-size: 4rem;
         margin-left: 50px;
         top: -2%;
