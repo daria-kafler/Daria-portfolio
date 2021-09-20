@@ -32,12 +32,12 @@ html {
 
 body {
     /* background:burlywood; */
+    overflow-x: hidden;
     min-height: 100vh;
     max-width: 100%;
     padding-left: 2em;
     padding-right: 2em;
     font-size: var(--default-body-font-size);
-    overflow: auto;
     display: flex;
     flex-direction: column;
 }
@@ -87,8 +87,8 @@ nav {
     z-index: 99;
     background-color: var(--transparent-background-color);
     width: 100%;
-    margin-left: -4rem;
-    padding-left: 8rem;
+    margin-left: -3rem;
+    padding-left: 3rem;
 }
 .menu-button {
     background: none;
@@ -381,6 +381,13 @@ footer {
     body {
         /* background: rgb(112, 112, 112); */
     }
+    .sidenav .closebtn {
+        position: absolute;
+        right: 88%;
+        font-size: 4rem;
+        margin-left: 50px;
+        top: -2%;
+    }
     .svg-hero {
         display:inline;
         position: relative;
@@ -455,6 +462,18 @@ footer {
 
 /* This applies from 1000px onwards screen sizes */
 @media (min-width: 1000px) {
+    
+    .menu-button, #topBtn {
+        font-size: var(--default-body-font-size);
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        right: 94%;
+        font-size: 4rem;
+        margin-left: 50px;
+        top: -2%;
+    }
+
     .projects-wrapper {
         display: grid;
         grid-template-columns: 33% 33%;
@@ -472,5 +491,18 @@ footer {
     }
     .offsite-links {
         margin-top: 2rem;
+    }
+}
+
+@media (min-width: 1260px) {
+    .sidenav .closebtn {
+        position: absolute;
+        right: 98%;
+        font-size: 4rem;
+        margin-left: 50px;
+        top: -2%;
+    }
+    .more-about img {
+        shape-outside: margin-box;
     }
 }
