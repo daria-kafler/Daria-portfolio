@@ -116,7 +116,7 @@ grep -r "TODO\|FIXME\|HACK" --exclude-dir=node_modules .
 - Inline SVG logo artwork
 - JavaScript functions: `openNav()`, `closeNav()`, `backToTop()`, `scrollFunction()`
 
-**styles/style.css** (800+ lines):
+**styles/style.css** (500+ lines):
 - CSS custom properties for consistent theming
 - Mobile-first responsive design using clamp() functions
 - Main color scheme: `--main-accent-color: #29F9FF`, `--secondary-accent-color: #FF0051`
